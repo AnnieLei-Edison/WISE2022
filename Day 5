@@ -1,0 +1,9 @@
+Lecture- BLASTn:
+An algorithm and program for comparing primary biological sequence information, such as the amino-acid sequences of proteins or the nucleotides of DNA and/or RNA sequences.
+Blastn will search in a nucleotide database with a protein input.
+Laboratory 5- Setting up a PCR Reaction with Bacterial Cultures:
+Setting up a Taq primer mixture to set up the reaction and preparing the PCR tubes with enzymes and cells inside. Placing the PCR tubes in the thermal cycler with an initial denaturation at 94C, amplification at 52C, and additional elongation at 72C.
+Report on the reaction digest results.
+Lecture- BLASTx:
+An algorithm and program for comparing primary biological sequence information, such as the amino-acid sequences of proteins or the nucleotides of DNA and/or RNA sequences.
+Blastx searches your sequence in a protein database with a nucleotide sequence as input.
