@@ -1,0 +1,64 @@
+Lecture- Determine ORF:
+1. Consider a hypothetical sequence:
+CGCTACGTCTTACGCTGGAGCTCTCATGGATCGGTTCGGTAGGGCTCGATCACATCGCTAGCCAT
+ 
+2. Divide the sequence into 6 different reading frames(+1, +2, +3, -1, -2 and -3). The first reading frame is obtained by considering the sequence in words of 3. 
+ 
+FRAME +1: CGC TAC GTC TTA CGC TGG AGC TCT CAT GGA TCG GTT CGG TAG GGC TCG ATC ACA TCG CTA GCC AT
+ 
+The second reading frame is formed after leaving the first nucleotide and then grouping the sequence into words of 3 nucleotides 
+ 
+FRAME +2: C GCT ACG TCT TAC GCT GGA GCT CTC ATG GAT CGG TTC GGT AGG GCT CGA TCA CAT CGC TAG CCA T
+ 
+The third reading frame is formed after leaving the first 2 nucleotides and then grouping the sequence into words of 3 nucleotides 
+ 
+FRAME +3: CG CTA CGT CTT ACG CTG GAG CTC TCA TGG ATC GGT TCG GTA GGG CTC GAT CAC ATC GCT AGC CAT
+ 
+The other 3 reading frames can be found only after finding the reverse complement.
+Complement : GCGATGCAGAATGCGACCTCGAGAGTACCTAGCCAAGCCATCCCGAGCTAGTGTAGCGATCGGTA
+Reverse complement: ATGGCTAGCGATGTGATCGAGCCCTACCGAACCGATCCATGAGAGCTCCAGCGTAAGACGTAGCG
+ 
+Now same process as that of +1, +2 and +3 strands is repeated for -1, -2 and -3 strands with reverse complement sequence
+FRAME -1: ATG GCT AGC GAT GTG ATC GAG CCC TAC CGA ACC GAT CCA TGA GAG CTC CAG CGT AAG ACG TAG CG
+FRAME -2: A TGG CTA GCG ATG TGA TCG AGC CCT ACC GAA CCG ATC CAT GAG AGC TCC AGC GTA AGA CGT AGC G
+FRAME -3: AT GGC TAG CGA TGT GAT CGA GCC CTA CCG AAC CGA TCC ATG AGA GCT CCA GCG TAA GAC GTA GCG
+ 
+3. Now mark the start codon and stop codons in the reading frames 
+ 
+FRAME +1: CGC TAC GTC TTA CGC TGG AGC TCT CAT GGA TCG GTT CGG TAG GGC TCG ATC ACA TCG CTA GCC AT
+FRAME +2: C GCT ACG TCT TAC GCT GGA GCT CTC ATG GAT CGG TTC GGT AGG GCT CGA TCA CAT CGC TAG CCA T
+FRAME +3: CG CTA CGT CTT ACG CTG GAG CTC TCA TGG ATC GGT TCG GTA GGG CTC GAT CAC ATC GCT AGC CAT
+FRAME -1: ATG GCT AGC GAT GTG ATC GAG CCC TAC CGA ACC GAT CCA TGA GAG CTC CAG CGT AAG ACG TAG CG
+FRAME -2: A TGG CTA GCG ATG TGA TCG AGC CCT ACC GAA CCG ATC CAT GAG AGC TCC AGC GTA AGA CGT AGC G
+FRAME -3: AT GGC TAG CGA TGT GAT CGA GCC CTA CCG AAC CGA TCC ATG AGA GCT CCA GCG TAA GAC GTA GCG
+ 
+4. Identify the open reading frame (ORF) - sequence stretch begining with a start codon and ending in a stop codon.
+ 
+FRAME +2:  ATG GAT CGG TTC GGT AGG GCT CGA TCA CAT CGC TAG 
+FRAME -1: ATG GCT AGC GAT GTG ATC GAG CCC TAC CGA ACC GAT CCA TGA 
+FRAME -3:  ATG AGA GCT CCA GCG TAA
+5. Based on the amino acid table the peptide sequence is found
+
+FRAME +2:  ATG GAT CGG TTC GGT AGG GCT CGA TCA CAT CGC TAG 
+          met asp arg phe gly arg ala arg ser his arg stop
+ 
+FRAME -1: ATG GCT AGC GAT GTG ATC GAG CCC TAC CGA ACC GAT CCA TGA 
+          met ala ser asp val ile glu pro tyr arg thr asp pro stop
+ 
+FRAME -3:  ATG AGA GCT CCA GCG TAA
+          met arg ala pro ala stop
+ 
+By analyzing the ORF we can predict the possible amino acids that are producing during the translation process. The prediction of the correct ORF from a newly sequenced gene is an important step. Finding ORF helps to design the primers which are required for experiments like PCR, sequencing etc.
+
+Lecture- BLASTP: BlastP simply compares a protein query to a protein database. Standard protein-protein BLAST (blastp) is used for both identifying a query amino acid sequence and for finding similar sequences in protein databases. Like other BLAST programs, blastp is designed to find local regions of similarity.
+
+Laboratory 6- Pour on gels, videos on loading gel: Preparing the TAE agarose gel by preparing the TAE buffer in the microwave, adding EtBr to the agarose gel mix, and pouring the agarose into the gel casting for it to cool.
+ Run gel PCR: Preparing the samples and loading the agarose gel with DNA samples inside. Then turn on the gel box with lead and voltage at 150 volts.
+
+Sequence Analysis- PC1 and PC2
+
+Lecture- UTR Range Analysis: In molecular genetics, an untranslated region (or UTR) refers to either of two sections, one on each side of a coding sequence on a strand of mRNA. If it is found on the 5' side, it is called the 5' UTR (or leader sequence), or if it is found on the 3' side, it is called the 3' UTR (or trailer sequence).
+
+Laboratory 7- Plasmid DNA Minipreps: Students resuspend the culture and microcentrifuge 1.5 ml for the supernatant and pellet and remove the supernatant multiple times after putting buffers and solutions inside, continuing to centrifuge. Till only the remaining is left and separated with 60ul of buffer EB. The plasmid DNA is now separated for the restriction digests.
+Laboratory 8-Setting up Restriction Digests: Prepare a 3X Mix and add to the miniprep DNA and then add loading dye after incubating at 37C.
+Lab 9B- Running an Agarose Gel for the Restriction DIgests: Prepare TAE agarose gel, prepare samples and load gel, and interpret restriction digest reactions to measure the length of base pairs.
